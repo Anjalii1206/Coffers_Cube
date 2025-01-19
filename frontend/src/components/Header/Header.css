@@ -26,10 +26,11 @@
     font-size: 1vw;
 }
 .header-contents button{
+    width: 40%;
     border : none;
     color:#747474;
     font-weight: 500;
-    padding: 1vw 2.3vw;
+    padding: 1vw 2vw;
     background-color: white;
     font-size: max(1vw,13px);
     border-radius: 50px;
@@ -47,6 +48,7 @@
         display: none;
     }
     .header-contents button{
-        padding:2vw 4vw;
+        padding:2vw 3vw;
+        max-width : 30%;
     }
   }

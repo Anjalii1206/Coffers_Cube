@@ -36,7 +36,7 @@
 }
 .login-popup-inputs input{
     outline:none;
-    border:1px solid #00854d;
+    border:1px solid #8c14db;
     padding: 10px;
     border-radius: 4px;
 
@@ -46,7 +46,7 @@
     padding:10px;
     border-radius: 4px;
     color: white;
-    background-color:#00854d;
+    background-color: #9900ff;
     font-size:15px;
     cursor: pointer;
 }
@@ -60,7 +60,7 @@
     margin-top:5px;
 }
 .login-popup p span{
-    color:#00854d;
+    color: #8c14db;
     font-weight: 500;
     cursor: pointer;
 }
