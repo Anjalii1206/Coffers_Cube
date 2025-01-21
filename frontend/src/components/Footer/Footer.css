@@ -55,5 +55,8 @@
         .footer hr {
             width: 100%;
         }
+        .footer-content-left{
+            width:90%;
+        }
     }
     
