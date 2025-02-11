@@ -30,7 +30,7 @@
   .dot {
     width: 8px;
     height: 8px;
-    background-color: red;
+    background-color: #d198f8;
     border-radius: 50%;
     position: absolute;
     top: -5px;
@@ -38,18 +38,18 @@
   }
   
   .navbar button {
-    padding: 10px 30px;
+    padding: 10px 25px;
     background-color: transparent;
     color: #000000;
-    border: 1px solid rgb(253, 42, 5);
+    border: 1px solid #9900ff;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     transition:0.3s ease-in-out ;
   }
   
   .navbar button:hover {
-    background-color: #fff4f2;
+    background-color: #f0d6fa;
   }
   .navbar .active{
     padding-bottom: 2px;
@@ -63,11 +63,56 @@
     position: absolute;
     min-width: 10px;
     min-height: 10px;
-    background-color: red;
+    background-color: #34de2b;
     border-radius: 5px;
     top:-8px;
     right:-8px;
   }
+
+.navbar-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #fbf7fff7;
+    padding: 7px 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(156, 5, 194);
+    outline: 2px solid white;
+    list-style: none;
+    transition: ease-in-out 0.7s;
+}
+.nav-profile-dropdown li{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-profile-dropdown img {
+  width: 20px;
+}
+
+.nav-profile-dropdown li:hover{
+  color: #8003d9;
+}
+.signbutton{
+  background-color: #f7e7fd;
+}
+hr{
+  color:  #000000;
+  
+}
+
   @media (max-width:1050px){
     .navbar .logo{
       width:140px;
