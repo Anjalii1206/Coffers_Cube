@@ -1,6 +1,6 @@
 # 🍽️ Food Delivery Website
 
-Welcome to our **Full-Stack Food Delivery Website**! This project allows users to explore restaurants, add items to their cart, and securely complete their orders using **Razorpay** for payments.
+Welcome to our **Full-Stack Food Delivery Website**! This project allows users to explore restaurants, add items to their cart, and securely complete their orders using **Stripe** for payments.
 
 ## 🚀 Tech Stack
 
