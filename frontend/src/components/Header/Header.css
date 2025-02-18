@@ -1,7 +1,7 @@
 .header{
     height : 34vw;
     margin : 30px auto;
-    background : url('/header_img.png') no-repeat;
+    background : url('../../assets/header1_img.png') no-repeat;
     background-size:contain;
     position :relative;
 }
@@ -28,12 +28,17 @@
 .header-contents button{
     width: 40%;
     border : none;
-    color:#747474;
+    color:#5d5d5d;
     font-weight: 500;
     padding: 1vw 2vw;
     background-color: white;
     font-size: max(1vw,13px);
     border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.header-contents button:hover {
+    background-color: #36e81b;
+    color: rgb(0, 0, 0); 
 }
 @media (max-width:1050px){
     .header-contents{

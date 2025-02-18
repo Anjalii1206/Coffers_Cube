@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 // placing user order from frontend
 const placeOrder = async (req,res) => {
 
-    const frontend_url = "http://localhost:5173";
+    const frontend_url = "http://localhost:5174";
 
     try {
         const newOrder = new orderModel({
@@ -20,6 +20,7 @@ const placeOrder = async (req,res) => {
         await newOrder.save();
         await userModel.findByIdAndUpdate(req.body.userId,{cartData:{}});
 
+<<<<<<< HEAD
         //const exchangeRate = 83;
 
         const line_items = req.body.items.map((item)=>({
@@ -40,9 +41,29 @@ const placeOrder = async (req,res) => {
                     name:"Delivery Charges"
                 },
                 unit_amount: Math.round(2 * 100 * 100)//Math.round((2 * 100) / exchangeRate * 100) //2*100*80
+=======
+        const line_items = req.body.items.map((item) => ({
+            price_data: {
+                currency: "inr", 
+                product_data: {
+                    name: item.name
+                },
+                unit_amount: Math.round(item.price * 100)
             },
-            quantity:1
-        })
+            quantity: item.quantity
+        }));
+
+        line_items.push({
+            price_data: {
+                currency: "inr", // Keep INR as currency
+                product_data: {
+                    name: "Delivery Charges"
+                },
+                unit_amount: Math.round(10 + 2)
+>>>>>>> 3bc5bc8 (Admin Panel Order Functionality)
+            },
+            quantity: 1
+        });
 
         const session = await stripe.checkout.sessions.create({
             line_items:line_items,

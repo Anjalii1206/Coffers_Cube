@@ -3,7 +3,7 @@
     grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
     align-items: start;
     gap: 30px;
-    border: 1px solid tomato;
+    border: 1px solid rgb(104, 6, 241);
     padding: 20px;
     margin: 30px 0px;
     font-size: 14px;
@@ -20,25 +20,17 @@
     margin-bottom: 10px;
 }
 .order-item select{
-    background-color: #ffe8e4;
-    border: 1px solid tomato;
+    background-color: #ede4ff;
+    border: 1px solid rgb(166, 71, 255);
     width: max(10vw,120px);
     padding: 10px;
     outline: none;
 }
 
-:root .order-item select{
-    background-color: black;
-    color: white;
-    border: 1px solid tomato;
+.order-item img{
+    width: 60px;
+    border-radius: 5px;
 }
-
-.lightcolors .order-item select{
-    background-color: #ffe8e4;
-    color: black;
-    border: 1px solid tomato;
-}
-
 
 @media (max-width:1000px) {
     .order-item{
