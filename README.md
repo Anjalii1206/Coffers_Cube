@@ -1,6 +1,6 @@
-# 🍽️ Food Delivery Website
+# 🍽️ COFFERS CUBE : A Food Delivery Website
 
-Welcome to our **Full-Stack Food Delivery Website**! This project allows users to explore restaurants, add items to their cart, and securely complete their orders using **Stripe** for payments.
+Welcome to my **Full-Stack Food Delivery Website : COFFERS CUBE**! This project allows users to explore Menu Items, Add items to their cart, and securely complete their orders using **Stripe** for payments with Admin Dashboard.
 
 ## 🚀 Tech Stack
 
