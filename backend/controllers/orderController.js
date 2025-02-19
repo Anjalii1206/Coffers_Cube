@@ -20,28 +20,6 @@ const placeOrder = async (req,res) => {
         await newOrder.save();
         await userModel.findByIdAndUpdate(req.body.userId,{cartData:{}});
 
-<<<<<<< HEAD
-        //const exchangeRate = 83;
-
-        const line_items = req.body.items.map((item)=>({
-            price_data:{
-                currency:"inr",
-                product_data:{
-                    name:item.name
-                },
-                unit_amount: Math.round(item.price * 100)//Math.round((item.price / exchangeRate) * 100 * 100)  //item.price*100*80
-            },
-            quantity:item.quantity
-        }))
-        
-        line_items.push({
-            price_data:{
-                currency:"inr",
-                product_data:{
-                    name:"Delivery Charges"
-                },
-                unit_amount: Math.round(2 * 100 * 100)//Math.round((2 * 100) / exchangeRate * 100) //2*100*80
-=======
         const line_items = req.body.items.map((item) => ({
             price_data: {
                 currency: "inr", 
@@ -60,7 +38,6 @@ const placeOrder = async (req,res) => {
                     name: "Delivery Charges"
                 },
                 unit_amount: Math.round(10 + 2)
->>>>>>> 3bc5bc8 (Admin Panel Order Functionality)
             },
             quantity: 1
         });
